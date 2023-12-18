@@ -41,3 +41,45 @@ const myFunction = function(){ console.log('New log for console value'); }
 console.log(typeof fruits, typeof userList, typeof myFunction);
 // typeof of array is object and object is object and function is function is object function
 
+
+
+//+++++++++++++++++++++++++++++
+
+//Types of memories 
+
+// stack (Primitive Datatype) , Heap (Non Primitive Datatype)
+// stack memory is used storing Primitive Data type, Heap memory is used for Non Promitive Data type
+
+let userName = 'vaibhav132';
+let newUserName = userName;
+newUserName = 'HHHHHHHHHHHHH'
+
+console.log(userName, newUserName);
+// so if the data is of premitive type i.e., stack is updated or assingned to some other variable only its copy is beeing updated or created 
+
+
+
+
+const UserDetailOne= {
+    name:'hellow',
+    email:'hellow.com'
+};
+
+const newUserDetailTwo = UserDetailOne;
+
+newUserDetailTwo.email = 'newemail@gmail.com';
+
+console.log(newUserDetailTwo.email, UserDetailOne.email);
+
+const fruitArray = ['apple', 'orange', 'berry'];
+
+const newfruitArray = fruitArray;
+
+newfruitArray[2] = 'demo';
+
+console.log(fruitArray[2], newfruitArray[2]);
+
+
+
+
+//if the data is on non premitive type i.e., of Heap memory then if its assigned to another variable and then the both varibale reffer to same value means if we update any value from any of the variable, values for bothe variable will get updated
