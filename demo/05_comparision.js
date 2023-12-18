@@ -15,7 +15,7 @@
 as we can see in line no 10 and line no 11 that null is not greater than 0 and not is equeals to 0 but in JS conversion algo what we 
 compare it using >= operator it consider's null as greater than or eqauls to 0 thus all ther statements are false but last one is true !!!!!!!!!!!
 */
-
+//when we use Comparistion Operator in JS it converts null to 0 thus it shows null >= 0  
 
 
 console.log(undefined > 0); //=>false
