@@ -77,3 +77,14 @@ const heyString = "Yaa Hoo";
 console.log(`Hey  ${heyString.repeat(5)}`);
 //this will repeat the parent string for number of time passed in repeat function
 // O/p => Hey  Yaa HooYaa HooYaa HooYaa HooYaa Hoo
+
+
+//replace *********************************
+//this will replace the given string substrings with passed respective substring
+const replaceUrl="https://improved-barnacle-g6rvxggq6q5hwjj5.github.dev";
+console.log(replaceUrl.replaceAll('-', '%20'));
+//the above first - will be relaced with %20 O/P=> https://improved%20barnacle-g6rvxggq6q5hwjj5.github.dev
+
+//to replace all - with %20 use function replaceAll
+
+
