@@ -14,4 +14,19 @@ userDetails.last name = 'singh'; //this will throw an ERROR
 userDetails['last name']="singh";
 
 //similarly to access the value for key with space we should use bracket operator in JS
-console.log(userDetails['last name']); 
+//console.log(userDetails['last name']); 
+
+/*****************New Demo*/
+/**
+ now in this example we can see that to adda value of newValue as key in numberData we have to use bracket Operator
+
+ if we use the dot operatot the key will be added of name newValue not as the value of newValue (i.e., data type)
+ */
+const numberData ={
+    value:23,
+    power:1,
+};
+const newValue = 'data type';
+
+numberData[newValue]="number";
+console.log(numberData)
