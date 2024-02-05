@@ -15,3 +15,22 @@ sumTwoNumber(5,7);
  or any number summed with undefined is NaN 
  e.g., 3+4+undefined=NaN
  */
+
+
+ function firstCharacter(value){
+    return value[0];
+ };
+
+//  console.log("fist value of Vaibhav is:",firstCharacter('Vaibhav'));
+
+function isPresent(arrayValue, data){
+    for(value of arrayValue){
+        // console.log(value)
+        if(data == value)
+        return arrayValue.indexOf(value);
+    }
+    return -1
+};
+
+console.log(isPresent([3,5,4,3,2,6,4],0));
+
