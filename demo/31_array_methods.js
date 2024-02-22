@@ -22,3 +22,7 @@ function multtiplyBy2(value, index){
     console.log(`value is ${value} and index is ${index}`)
 }
 demoArray.forEach(multtiplyBy2)
+/** 
+ for eabch is old than for of loop thus we can see m=forEach more often as compare to 
+ for of Loop
+ */
