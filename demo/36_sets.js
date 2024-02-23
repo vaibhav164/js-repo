@@ -28,7 +28,7 @@ newSet.add(5)
 newSet.add(3)
 newSet.add(4)
 newSet.delete(3)
-console.log(newSet)
+// console.log(newSet)
 
 
 //to check wheather the element is there in set or not
@@ -58,6 +58,18 @@ loopSet.add(17);
 loopSet.add(['vaibhav', 'vishal']);
 
     for(item of loopSet){
-        console.log(item)
+        // console.log(item)
     }
 // so from L60 we can see that we can access the element of set
+
+/******* set can also be used to find the unique element or remove repeated 
+ * elements in array
+ */
+
+let myArray =[2,2,2,3,4,5,56,6,78,666,7,7,7,6,56];
+
+const uniqueElements = new Set(myArray);
+
+console.log(uniqueArray);
+
+//by doing this we can remove repeated elements of array and get all unique one
