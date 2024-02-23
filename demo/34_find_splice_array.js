@@ -49,9 +49,23 @@ const applicantList =[
 
 const are_applicants_adult = applicantList.every((value)=>value.age>=18) 
 
-console.log(are_applicants_adult)
+// console.log(are_applicants_adult)
 
 
 //so above is an example of every method of array it takes an call back function
 //return only tru of all condition in callback for each element in array is true
 //else false
+
+
+const lunchMenue = ['fruit', 'juice', 'snacks', 'chutney', 'sweets', 'deserts'];
+
+let isSweetthere = lunchMenue.some(value =>{
+    return (value == 'sweets' || value == 'deserts')
+})
+
+console.log("does menu has sweets",isSweetthere);
+
+/* some method of array in JS takes a callback and returns true if any of the 
+   value true unlike every as if any of the element in array is true as per callback
+   function it will return true
+*/
