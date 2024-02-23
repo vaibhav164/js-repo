@@ -63,9 +63,33 @@ let isSweetthere = lunchMenue.some(value =>{
     return (value == 'sweets' || value == 'deserts')
 })
 
-console.log("does menu has sweets",isSweetthere);
+// console.log("does menu has sweets",isSweetthere);
 
 /* some method of array in JS takes a callback and returns true if any of the 
    value true unlike every as if any of the element in array is true as per callback
    function it will return true
 */
+
+
+
+
+
+
+/*************fill method of array in JS */
+
+const array = new Array(10).fill('&');
+// console.log(array);
+
+
+const numberArray = [21,2,3,4,5,6,7,8,9,0];
+
+numberArray.fill('*',4,numberArray.length);
+console.log(numberArray)
+numberArray.fill('*')
+console.log(numberArray)
+
+//we can use fill in 2 ways one is at L80 in this will fill all the array element
+// with the value passed in fill method 
+// and else if we had passed three parameter to fill method first will be what to 
+//be filled and second is from where to be filled and third will be till when it 
+// has to be filled
