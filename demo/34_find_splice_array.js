@@ -84,12 +84,50 @@ const array = new Array(10).fill('&');
 const numberArray = [21,2,3,4,5,6,7,8,9,0];
 
 numberArray.fill('*',4,numberArray.length);
-console.log(numberArray)
+// console.log(numberArray)
 numberArray.fill('*')
-console.log(numberArray)
+// console.log(numberArray)
 
 //we can use fill in 2 ways one is at L80 in this will fill all the array element
 // with the value passed in fill method 
 // and else if we had passed three parameter to fill method first will be what to 
 //be filled and second is from where to be filled and third will be till when it 
 // has to be filled
+
+
+
+
+/*** SPLICE method is used when we want to delete or insert something in array */
+
+//splice method array.splice(start,delete,insert)
+
+// start delete insert
+const itemList= ['item1', 'item2', 'item3', 'item4']
+//delete
+
+// const deletedItem = itemList.splice(1,1);
+// console.log(deletedItem, itemList)
+
+/** so the splice has above as 2 parameter one will take the starting index
+ * other will take how much item has to be deleted and in return it will give the 
+ * deleted element
+ */
+
+//insert 
+
+// itemList.splice(1, 0, 'inserted item');
+
+//  console.log(itemList, newArray);
+
+ //so above L118 will insert an item as 'inserted item' at 1st position in array
+
+
+ //delete and insert at same time
+
+ const deletedvalue =itemList.splice(2,1,'updated item3');
+
+ console.log(deletedvalue, itemList)
+
+
+ //so L127 will delete one item from postion 2 and insert an updated string
+// as 'updated item3'
