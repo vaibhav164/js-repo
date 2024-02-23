@@ -41,7 +41,7 @@ mapObject.set('forth',4)
 //as the above key give array with keyname and value we can destructure it as below
 
 for([keyName, keyValue] of mapObject){
-    console.log(keyValue);
+    // console.log(keyValue);
 }
 
 //so here we can use for of in mpa Objects and get there values
@@ -49,6 +49,38 @@ for([keyName, keyValue] of mapObject){
 /************** the order at which the values are set in Map Object it will
  * be in same way
  */
+
+
+
+/**** new way to add elements in Map */
+
+const person = new Map([['name','vaibhav'],['age','99'],['country',91]]);
+
+// console.log(person)
+
+const personDetail = {
+    name:'vaibhav',
+    age:45
+};
+
+const personalValue = new Map();
+personalValue.set(personDetail, {country:91,number:9158402302});
+
+// console.log(personDetail, personalValue)
+
+//now lets try to get number of personalDatail
+
+console.log(personalValue.get(personDetail).number)
+
+
+/*****
+ * above we did is that we made an object a key to the map object and stored value
+ * of that key in map using set method by this the persondetail object
+ *  who has name and age as vaibhav and 45 now act as key to map in personalValue
+ * and we can get the number of key value of map by geting the personalValue and 
+ * acessing its number 
+ */
+
 
 
 
