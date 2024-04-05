@@ -2,7 +2,7 @@
 
 normalfunction();
 
-function normalfunction(){
+function normalfunction() {
     console.log('normal function log');
 }
 
@@ -21,6 +21,6 @@ arraowFunction();
  * 
  */
 
-const arraowFunction=()=>{
+const arraowFunction = () => {
     console.log('log for arrow function =>*************')
 }

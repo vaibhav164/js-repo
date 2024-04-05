@@ -1,7 +1,7 @@
 //new way to delare a string 
 
 const newStringDeclare = new String('Hellow bro');
-const newString= "New String";
+const newString = "New String";
 
 console.log(newString[2]);
 console.log(newStringDeclare);
@@ -20,7 +20,7 @@ console.log(demoString.charAt(4))
 
 //concat
 //this will concat the parent string with all passed parameters
-console.log(demoString.concat(".  ","new value", "   ", "Hellow"));
+console.log(demoString.concat(".  ", "new value", "   ", "Hellow"));
 
 
 // indexOf
@@ -38,7 +38,7 @@ console.log(demoString.slice(-8));
 //substring
 //it is same as slice only difference is in handling of negative indexes and fixed value grater than second index
 //in below log we get "hav" but in slice it will be an empty string 
-console.log(demoString.substring(7,4));
+console.log(demoString.substring(7, 4));
 
 
 //toUpperCase
@@ -47,7 +47,7 @@ console.log(demoString.substring(7,4));
 
 //trim
 //this will remove unnecessary space from starting and end of string o/p => "Hellloow.   workd."
-const trimeString="      Hellloow.   workd.    "
+const trimeString = "      Hellloow.   workd.    "
 console.log(trimeString.trim());
 
 //split 
@@ -81,7 +81,7 @@ console.log(`Hey  ${heyString.repeat(5)}`);
 
 //replace *********************************
 //this will replace the given string substrings with passed respective substring
-const replaceUrl="https://improved-barnacle-g6rvxggq6q5hwjj5.github.dev";
+const replaceUrl = "https://improved-barnacle-g6rvxggq6q5hwjj5.github.dev";
 console.log(replaceUrl.replaceAll('-', '%20'));
 //the above first - will be relaced with %20 O/P=> https://improved%20barnacle-g6rvxggq6q5hwjj5.github.dev
 

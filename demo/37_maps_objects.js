@@ -7,10 +7,10 @@ const firstMapObj = new Map();
 
 //to add element in Map Object
 
-firstMapObj.set('FirstName','vaibhav');
-firstMapObj.set('LastName','singh');
-firstMapObj.set('age',99);
-firstMapObj.set(9,9158402302);
+firstMapObj.set('FirstName', 'vaibhav');
+firstMapObj.set('LastName', 'singh');
+firstMapObj.set('age', 99);
+firstMapObj.set(9, 9158402302);
 //so to add element in Map Object we use its set method it will take 2 params
 //fisrt is key name and other is key value as in L10 FusrstName is key name 
 //and vaibhav is key value of key name firstName
@@ -29,10 +29,10 @@ firstMapObj.set(9,9158402302);
 // console.log(firstMapObj.keys())
 
 const mapObject = new Map();
-mapObject.set('fisrt',23)
-mapObject.set('second',2)
-mapObject.set('third','demo')
-mapObject.set('forth',4)
+mapObject.set('fisrt', 23)
+mapObject.set('second', 2)
+mapObject.set('third', 'demo')
+mapObject.set('forth', 4)
 
 // for(key of mapObject){
 //     console.log(key)
@@ -40,7 +40,7 @@ mapObject.set('forth',4)
 
 //as the above key give array with keyname and value we can destructure it as below
 
-for([keyName, keyValue] of mapObject){
+for ([keyName, keyValue] of mapObject) {
     // console.log(keyValue);
 }
 
@@ -54,17 +54,17 @@ for([keyName, keyValue] of mapObject){
 
 /**** new way to add elements in Map */
 
-const person = new Map([['name','vaibhav'],['age','99'],['country',91]]);
+const person = new Map([['name', 'vaibhav'], ['age', '99'], ['country', 91]]);
 
 // console.log(person)
 
 const personDetail = {
-    name:'vaibhav',
-    age:45
+    name: 'vaibhav',
+    age: 45
 };
 
 const personalValue = new Map();
-personalValue.set(personDetail, {country:91,number:9158402302});
+personalValue.set(personDetail, { country: 91, number: 9158402302 });
 
 // console.log(personDetail, personalValue)
 
@@ -87,11 +87,11 @@ console.log(personalValue.get(personDetail).number)
 
 
 
-const newObject ={
-    name:'vaibhav',
-    lastName:'Singh',
-    age:33,
-    3:9158402302
+const newObject = {
+    name: 'vaibhav',
+    lastName: 'Singh',
+    age: 33,
+    3: 9158402302
 };
 //we cannot use for of in Object but can acecess the value of key using for in 
 // loop

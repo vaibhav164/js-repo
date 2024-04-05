@@ -1,4 +1,4 @@
-const myNameFunction=()=>{
+const myNameFunction = () => {
     return console.log("My name function is called");
 }
 
@@ -7,9 +7,9 @@ const myNameFunction=()=>{
 //line 5 will log the name of function myNameFunction
 
 const UserDetail = {
-    val1:{name:'vaibhav',id:2323},
-    val2:{ name:'anuj',id:2354},
-    val3:{name:'vishal',id:006},
+    val1: { name: 'vaibhav', id: 2323 },
+    val2: { name: 'anuj', id: 2354 },
+    val3: { name: 'vishal', id: 006 },
 };
 
 //console.log(UserDetail.name) // undefined
@@ -20,7 +20,7 @@ const UserDetail = {
 //console.log(Object.name); //Object
 //console.log(Array.name); //Array
 
-const days=['one','two', 'three', 'four'];
+const days = ['one', 'two', 'three', 'four'];
 
 //console.log(days.name); // undefined
 

@@ -7,7 +7,7 @@
 //order is not guaranteed
 //unique items only {it cannot have duplicate elements}
 
-const myFirstSet = new Set([3,4,6,3,5]);
+const myFirstSet = new Set([3, 4, 6, 3, 5]);
 // console.log(myFirstSet);
 //in above L10 it will only store 3 for once
 
@@ -57,16 +57,16 @@ loopSet.add(16);
 loopSet.add(17);
 loopSet.add(['vaibhav', 'vishal']);
 
-    for(item of loopSet){
-        // console.log(item)
-    }
+for (item of loopSet) {
+    // console.log(item)
+}
 // so from L60 we can see that we can access the element of set
 
 /******* set can also be used to find the unique element or remove repeated 
  * elements in array
  */
 
-let myArray =[2,2,2,3,4,5,56,6,78,666,7,7,7,6,56];
+let myArray = [2, 2, 2, 3, 4, 5, 56, 6, 78, 666, 7, 7, 7, 6, 56];
 
 const uniqueElements = new Set(myArray);
 

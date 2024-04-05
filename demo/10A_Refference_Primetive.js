@@ -3,10 +3,10 @@
 
 // Reference Type
 
-let a ={name:'vaibhav', age:22};
+let a = { name: 'vaibhav', age: 22 };
 let b = a;
 console.log(b) //O/p {name:'vaibhav', age:22}
-a= {name:'#####v', age:22};
+a = { name: '#####v', age: 22 };
 
 console.log(a) //O/p {name:'#####v', age:22}
 console.log(b) //O/p {name:'vaibhav', age:22}

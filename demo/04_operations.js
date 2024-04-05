@@ -18,7 +18,7 @@ console.log(5%3);   //=>2
 let str1 = "hello";
 let str2 = " vaibhav";
 
-let str3 = str1+str2;
+let str3 = str1 + str2;
 // console.log(str3);  //=> hello vaibhav
 
 
@@ -41,7 +41,7 @@ let gameCounter = 100;
 // gameCounter++
 // console.log(gameCounter);//=>101
 
-// console.log(gameCounter++);
+// console.log(gameCounter++);//=>100
 
 // console.log(1+2+4+"4"+3+2);
 
@@ -49,4 +49,4 @@ let gameCounter = 100;
 let x2 = 3n;
 const y2 = x2++;
 
-console.table([x2,y2]);
+console.table([x2, y2]);

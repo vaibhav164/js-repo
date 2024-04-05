@@ -12,7 +12,7 @@ accountEmail = 'timepass@timepass.com';
 accountPassword = 2323232;
 accountCity = 'Boisar';
 
-console.table([accountEmail, accountId, accountId, accountPassword, value ='demo', accountState]); 
+console.table([accountEmail, accountId, accountId, accountPassword, value = 'demo', accountState]);
 /* Output for the Demo
 ┌─────────┬─────────────────────────┐
 │ (index) │         Values          │

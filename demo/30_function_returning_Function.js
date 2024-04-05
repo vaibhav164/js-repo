@@ -1,13 +1,13 @@
-function func(){
+function func() {
     console.log("in Func")
 };
 
-function func1(val){
-    console.log("Inside func1\n","now calling func");
+function func1(val) {
+    console.log("Inside func1\n", "now calling func");
     func();
 }
 
-function demoFunction(){
+function demoFunction() {
     console.log("inside Demo Function");
     return func1;
 };

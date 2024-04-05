@@ -30,7 +30,7 @@ string
 │    1    │   NaN    │
 └─────────┴──────────┘
 number
-*/ 
+*/
 
 
 
@@ -47,4 +47,4 @@ let booleanIsPresent = Boolean(isPresent);
 let rendomNumber = 45;
 let stringRandomNumber = String(45);
 
-console.table([stringRandomNumber, typeof(stringRandomNumber)]);
+console.table([stringRandomNumber, typeof (stringRandomNumber)]);

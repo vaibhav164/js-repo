@@ -1,6 +1,6 @@
-const newObject ={
-    name:'demo name',
-    age:33
+const newObject = {
+    name: 'demo name',
+    age: 33
 };
 
 // const secondObject = {...newObject};
@@ -13,7 +13,7 @@ console.log(newObject)
  * assign method
  * */
 
-const thirdObj = Object.assign({},newObject);
+const thirdObj = Object.assign({}, newObject);
 
 console.log(thirdObj)
 

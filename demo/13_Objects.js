@@ -1,9 +1,9 @@
 //difference between bracket and . "dot" operator
 
-const userDetails ={
-    name:'vaibhav',
-    age:45,
-    contact:231
+const userDetails = {
+    name: 'vaibhav',
+    age: 45,
+    contact: 231
 };
 
 //adding a key of space value 
@@ -11,7 +11,7 @@ const userDetails ={
 userDetails.last name = 'singh'; //this will throw an ERROR
 */
 //to do this we can do this;
-userDetails['last name']="singh";
+userDetails['last name'] = "singh";
 
 //similarly to access the value for key with space we should use bracket operator in JS
 //console.log(userDetails['last name']); 
@@ -22,11 +22,11 @@ userDetails['last name']="singh";
 
  if we use the dot operatot the key will be added of name newValue not as the value of newValue (i.e., data type)
  */
-const numberData ={
-    value:23,
-    power:1,
+const numberData = {
+    value: 23,
+    power: 1,
 };
 const newValue = 'data type';
 
-numberData[newValue]="number";
+numberData[newValue] = "number";
 console.log(numberData)

@@ -1,12 +1,12 @@
-const names=['ajay','arman', 'vishal', 'vivek','tarun'];
+const names = ['ajay', 'arman', 'vishal', 'vivek', 'tarun'];
 
-for(name1 of names){
+for (name1 of names) {
         console.log(name1);
 }
 
 //here name1 is a value of specific index of names array as per its instance
 
-for(name2 in names){
+for (name2 in names) {
         console.log(name2)
 }
 

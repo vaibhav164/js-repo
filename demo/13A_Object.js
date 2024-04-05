@@ -1,11 +1,11 @@
-const product={
-    name:"parleG",
-    quantity:4,
-    category:'snack',
-    taste:'sweet',
-    batchDetails:{
-        expiryDate:'23-12-24',
-        manifacturingData:'45'
+const product = {
+    name: "parleG",
+    quantity: 4,
+    category: 'snack',
+    taste: 'sweet',
+    batchDetails: {
+        expiryDate: '23-12-24',
+        manifacturingData: '45'
     }
 }
 product['batchDetails']['manifacturingData'] = '23-12-23';
@@ -23,11 +23,11 @@ And similarly we cant access the key with name space in name using dot notiation
 **/
 
 //product.product name='parle'
-product['product name']= 'parle';
-const newKey='companyName';
-product.newKey ='Parle';
+product['product name'] = 'parle';
+const newKey = 'companyName';
+product.newKey = 'Parle';
 
-product[newKey]='Parle'
+product[newKey] = 'Parle'
 // console.log(product);
 /**
 here below if we have predefined key we cant assigne it key value in objects

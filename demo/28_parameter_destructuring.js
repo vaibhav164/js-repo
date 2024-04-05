@@ -5,29 +5,29 @@
  Parameter destructuring is done in objects and its mostly used in React
  */
 
- const userDetails={
-    name:'vaibhav',
-    lastName:'singh',
-    gender:"M"
- };
+const userDetails = {
+   name: 'vaibhav',
+   lastName: 'singh',
+   gender: "M"
+};
 
 
- const printUserDetails=(userInfo)=>{
-    console.log("Name of user is ",userInfo.name,"and last Name is",userInfo.lastName,'and gender is ', userInfo.gender)
- }
+const printUserDetails = (userInfo) => {
+   console.log("Name of user is ", userInfo.name, "and last Name is", userInfo.lastName, 'and gender is ', userInfo.gender)
+}
 
 //  printUserDetails(userDetails);
 
 
- /**
-  the above thing can also be achived using parameter Destructuring e.g., below
-  */
+/**
+ the above thing can also be achived using parameter Destructuring e.g., below
+ */
 
-const printUserdetails =({name, lastName, gender,age=0})=>{
-    console.log("name is ",name)
-    console.log("lastName is ",lastName)
-    console.log("gender is ",gender)
-    console.log("age is ",age)
+const printUserdetails = ({ name, lastName, gender, age = 0 }) => {
+   console.log("name is ", name)
+   console.log("lastName is ", lastName)
+   console.log("gender is ", gender)
+   console.log("age is ", age)
 }
 
 printUserdetails(userDetails);
