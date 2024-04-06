@@ -1,5 +1,4 @@
 //foreach
-//reduce
 //map
 //filter
 
