@@ -9,3 +9,6 @@ function fun2() {
 }
 
 fun1(fun2)
+
+//callback function is a function which is being passed as parameter to 
+//another function
