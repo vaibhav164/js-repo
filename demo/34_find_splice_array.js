@@ -1,5 +1,7 @@
 //find in array
-
+/*****
+ * note that in JS array fir find method takes a callback function as parameter
+ */
 const animal = ['elephant', 'horse', 'cat', 'dog', 'cow'];
 
 const isLength3 = (string) => {
@@ -29,6 +31,10 @@ const userWithUserId6 = userList.find((user) => user.userId === 6);
 //unique
 
 /* EVERY METHOD */
+
+
+//so as similar to find every method also takes an callback methods as 
+// parameter
 const numbers = [4, 6, 8, 0, 2, 44];
 
 const is_array_even = numbers.every((num) => num % 2 === 0);
