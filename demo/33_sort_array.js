@@ -1,5 +1,6 @@
-/** here we can see that we can even sort a constant array as const variable in JS
- * prevents reasignment of variable not the modification of updation in value
+/** here we can see that we can even sort a constant array 
+ * as const variable in JS prevents reasignment of variable not the 
+ * modification of updation in value
  */
 
 
