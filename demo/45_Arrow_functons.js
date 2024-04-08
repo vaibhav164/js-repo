@@ -26,3 +26,10 @@ const product = {
     thus in general we can say that use of this in arrow function scope
     is not usefull 
   */
+
+
+/********_______Note______*/
+
+/***
+ we cant use call apply or bind in arrow fucntion scope it will not work
+ */
