@@ -36,7 +36,7 @@ object2.key2 = 'Value2 for Object2';
 
 // console.log(object2.__proto__)
 
-console.log(this.__proto__);
+// console.log(this.__proto__);
 
 //thus on L14 we set prot of Object2 as object1
 
@@ -44,3 +44,37 @@ console.log(this.__proto__);
 /**** there is other concept in JS as prototype its different than __prot0__ or
  [[prototype]]
  */
+
+/****___Now let try to resolve the issue of methods passing in mulple Objects
+ * using __proto__ below is example
+ */
+const userMethods = {
+  about() {
+    return console.log(`${this.firstName} is ${this.age} years old and lives in ${this.address}`);
+  },
+  isAdult() {
+    return this.age >= 18
+  }
+}
+const createUser = (firstName, lastname, age, address) => {
+  const user = Object.create(userMethods);//this will make userMethods as proto of user object
+  user.firstName = firstName;
+  user.lastname = lastname;
+  user.age = age;
+  user.address = address;
+  return user;
+}
+
+const user1 = createUser('Vinod', 'sawant', 45, 'Parle')
+const user2 = createUser('Kini', 'wade', 2, 'Boisar')
+
+/**Now we can see from L68 and L69 that we have created objects with name user1 and
+   user2 but they didn't have keys or functions as about() or isAdult() but we had
+   created the object using Object.create method and added __proto__ to it as well 
+   thus we can access the or any user created using createUser() function can access
+   userMethods because of __proto__ methods as below e.g.,
+***/
+
+user1.about();
+
+console.log(`${user2.firstName} is ${user2.isAdult ? 'Adult' : 'Minor'}`)
