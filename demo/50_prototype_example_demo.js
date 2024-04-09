@@ -1,7 +1,9 @@
 /*** Lets demonstrate the learning of protyping on funciton */
 
 //Create a function that creates user objects
-
+/***********__________NOTE_______
+    __proto__ and [[prototype]] are same don't get confused
+ */
 function createUser(firstName, lastName, age, address) {
     /****in previous file we had creted user as below 
       const user = Object.create(userMethods);
