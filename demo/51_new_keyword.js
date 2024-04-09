@@ -65,3 +65,13 @@ means it  basically makes returned this object __proto__ to the prototype
 or the fucntion for which the new keyword is called e., above is
 new createStudent() 
 */
+
+/***** NOTE NOTE NOTE NOTE NOTE **************/
+
+/***
+ function which is used to create an object which in above example is 
+ createStudent is called constructor function and general convention is 
+ that if the function is to be called with new keyword then we need to
+ start the name of the function with capital letters e.g., Createstudent
+ its a normal convention to call declare an construction funciton
+ */
