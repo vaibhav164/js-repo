@@ -50,3 +50,18 @@ student2.getLog();//student name is Nidhi age is 5 and mobile number is 23424
  * createStudent function makes the prototype object keys __proto__ object
  * keys of student1 and student2
  */
+
+
+/**** new keyword does 3 tasks 
+ 1) creates new object for function and asigns it a value of this
+ 2) updates the values of this object i.e, adds key to tha value in above
+ e.g., this.name = name;
+    this.age = age;
+    this.std = std;
+    ________and returns this from function thus in above method createStudent
+    we didn't returned anything
+3) it does this by defualt     const user = Object.create(createUser.prototype)
+means it  basically makes returned this object __proto__ to the prototype 
+or the fucntion for which the new keyword is called e., above is
+new createStudent() 
+*/
