@@ -14,6 +14,12 @@ console.log(2**3);  //=>8
 console.log(5%3);   //=>2
 */
 
+// if we add + operator to any other legitimate data type it will be converted to a number 
+/*
+e.g., console.log("3"+5+6)=>356 but
+console.log(+"3"+5+6)=>14
+*/
+
 
 let str1 = "hello";
 let str2 = " vaibhav";
