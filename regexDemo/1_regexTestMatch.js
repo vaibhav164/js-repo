@@ -11,5 +11,4 @@ console.log(testResult)
  the above is example of regex expression which has expression for thak 
  string thus if we'll test that wheather the give string has the regex
  value we'll get respective result as in L7
-
  */
