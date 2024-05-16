@@ -3,7 +3,7 @@ const strDemo = "Johny johny yes papa , my name is name of normal human";
 const regexGlobalmatchSubstring = /jo./ig;
 const regexSimpleMatchSubstring = /na./;
 
-console.log(strDemo.match(regexSimpleMatchSubstring));
+// console.log(strDemo.match(regexSimpleMatchSubstring));
 /***
  [
   'nam',
@@ -21,6 +21,18 @@ johny as it is starting from jo and if i had added global tag it will
 had checked complete string 
  */
 
-console.log(strDemo.match(regexGlobalmatchSubstring));
+// console.log(strDemo.match(regexGlobalmatchSubstring));
 
 //O/P=> [ 'Joh', 'joh' ]
+
+
+//Lets learn same for ends with also using . period symbol e.g., below
+
+let strList = "I had learned to type hundred times";
+
+const regexToLearnEndsWith = /.ed/g
+
+console.log(strList.match(regexToLearnEndsWith));
+/***
+ * O/P is [ 'ned', 'red' ]
+ */
