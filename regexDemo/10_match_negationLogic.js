@@ -26,4 +26,16 @@ console.log(stringDemo.match(regexForNegation))
   ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
   ' ', ' ', ' ', ' ', ' ', ' ', ' ', '.'
 ]
+
+if we add space for neglected in  regex as below expression
+const regexForNegation = /[^0-9 aeiou]/ig
+then it will ignore the spacess in string and out put will be as below
+[
+  'w', 'l', 'l', 'v', 'l', 'f', 'p',
+  'n', 'f', 'c', 't', 'n', 's', '/',
+  'b', 't', 't', 's', 'd', 'c', 'm',
+  'l', 'v', 'l', 't', 'l', 'l', 't',
+  'h', 'd', 'c', 'm', 'l', 'p', 'l',
+  'c', 's', '.'
+]
  */
