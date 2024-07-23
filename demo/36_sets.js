@@ -73,3 +73,17 @@ const uniqueElements = new Set(myArray);
 console.log(uniqueArray);
 
 //by doing this we can remove repeated elements of array and get all unique one
+
+//_________convert set into Array;
+
+
+let setData =new Set([3,43,3,3,3,43,6,4,6,7,8]);
+let setToArray= [..setData];
+//or
+let setToArray2= Array.from(setData);
+//or
+
+let setToArray3 = [];
+setData.forEach((item)=>{
+    setToArray3.push(item)
+});
