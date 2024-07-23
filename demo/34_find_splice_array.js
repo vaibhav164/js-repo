@@ -29,7 +29,7 @@ const userWithUserId6 = userList.find((user) => user.userId === 6);
 
 //so the find function is used in array method to find a value in array which is 
 //unique
-
+//so find method will return the value which occurs first in array for which the callback function returns true 
 /* EVERY METHOD */
 
 
