@@ -1,17 +1,19 @@
-function log(){
-    console.log(`${this.name} is ${this.age} year's old`)
+function details (hobby,time){
+    console.log(`${this.name} is ${this.age} years old likes to play ${hobby} since ${time} years`)
 }
 
-const user1 ={
-    name:'vaibhav',
-    age:23,
+const user1={
+    name:"Vaibhav",
+    age:45
 }
 
-const user2 ={
-    name:"ansu",
-    age:34
+const user2={
+    name:"Ansi",
+    age:67
 }
 
-log.call(user2)
-log.call(user1);
+details.call(user1,'guitar',4)
+details.call(user2,'music',65)
 
+details.apply(user1,['demo', 5])
+details.apply(user2,['test',23])
