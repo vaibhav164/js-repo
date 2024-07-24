@@ -1,9 +1,10 @@
+function log(){
+    console.log(`${this.name} is ${this.age} year's old`)
+}
+
 const user1 ={
     name:'vaibhav',
     age:23,
-    log:function(){
-        console.log(`${this.name} is ${this.age} year's old`)
-    }
 }
 
 const user2 ={
@@ -11,4 +12,6 @@ const user2 ={
     age:34
 }
 
-user1.log.call(user2)
+log.call(user2)
+log.call(user1);
+
