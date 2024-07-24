@@ -1,12 +1,12 @@
-function UserDetail(height, weight){
-    console.log(`${this.name} is ${this.age} years old , height is ${height} and weight is ${weight} `)
+//Linking of Object key with other object key
+
+const obj1 = {
+    key1:'Value1',
+    key2:'Value2'
 }
 
-const user1 ={
-    name:"Vaibhav",
-    age:34
-};
+const obj2 = Object.create(obj1)
 
-const logUserDetails = UserDetail.bind(user1, 45,12);
+console.log(obj2.__proto__)
 
-logUserDetails();
+//__proto__ is aslo called as dunder
