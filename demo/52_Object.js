@@ -1,19 +1,14 @@
-const obj ={
-    name:"vaibhav",
-    age:45,
-    about:function(){
-        this.logValue()
-        // console.log(`User name is ${this.name} and age is ${this.age}`)
-    },
-    logValue:function(){
-        console.log(this)
+const user1 ={
+    name:'vaibhav',
+    age:23,
+    log:function(){
+        console.log(`${this.name} is ${this.age} year's old`)
     }
 }
-obj.about();
 
-/******** In JS at browser console the value of this and window object are same i.e.,
- 
-console.log(this);
-console.log(window);
-_____ both will give same output as browser or JS ingine global object
- */
+const user2 ={
+    name:"ansu",
+    age:34
+}
+
+user1.log.call(user2)
