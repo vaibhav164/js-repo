@@ -9,14 +9,18 @@ Array.prototype.MyCustomFunction=function(){
     console.log("My cunstom Function in Array of JS")
     console.log("Programin in awesome!!!!!!!!!")
 }
- console.log(Array.prototype)
+//  console.log(Array.prototype)
  //O/P->Object(0) [ MyCustomFunction: [Function (anonymous)] ]
 
- console.log(Array.prototype.MyCustomFunction)
+//  console.log(Array.prototype.MyCustomFunction)
  //O/P->[Function (anonymous)]
 
- console.log(Array.prototype.MyCustomFunction())
+//  console.log(Array.prototype.MyCustomFunction())
  /*
  O/P->My cunstom Function in Array of JS
         Programin in awesome!!!!!!!!! 😍😍😍😍😍😍😍😍😍😍
  */
+
+        //>>>>>>>Check prototype of entity 
+console.log("HI______",Object.getPrototypeOf(number))
+//OP---->>>>HI______ Object(0) [ MyCustomFunction: [Function (anonymous)] ]
