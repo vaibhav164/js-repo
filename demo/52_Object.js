@@ -1,23 +1,30 @@
-//In JS function can also be treated as object
+//Revice new key word
+/***** 
+ so new does 3 things.
+ 1. creates object of fucntion name 
+ 2. this of that aobject will be the values of object and 
+    new will return this
+ 3. and new will create link between the function's
+    object and prototype of it directel;y for that we do not have
+    to do that way 
+    const Object1 = Object.create(functionName.prototype)
 
- function hey() {
-    console.log("Inside hey")
+    this thing will be handled by new keyword below is example
+*/
+
+function exampleFunction(firstname, contact){
+    this.firstname=firstname;
+    this.Mob= contact
 }
-// hey.call();
-// console.log(hey.name) 
-
-hey.newProperty = 'demo bro of key property of function'
-
-// console.log(hey.newProperty)
-
-//here you can see that function can act as object and here is the above example
-hey.prototype.value = function(){
-    console.log("inside value prototype in hey function")
+exampleFunction.prototype.exampleInfo=function(){
+    console.log(this.Mob, this.firstname)
 }
-hey.prototype.terms = function(){
-    console.log("inside trerms of prototype of hey")
-}
+const example1 = new exampleFunction('vaibhav', 91584023023)
+/***
+ now new will create object of the function and return's this fot it
+ now if we create prototype of exampleFunction and we create new instance 
+ of exampleFunciton new key word create direct link between the prototype
+ and function this value e.g., as can be seen
+ */
 
-hey.prototype.term2="prototype term2 key value"
-
-console.log(hey.prototype.term2)
+ example1.exampleInfo()
