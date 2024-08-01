@@ -1,7 +1,7 @@
 //Lest see hoisting in JS
-// console.log(this);
-// console.log(myName);
-// console.log(myFunction);
+console.log(this);
+console.log(myName);
+console.log(myFunction);
 
 
 var myName = "Vaibhav";
@@ -37,3 +37,27 @@ have O/P as below
 undefined
 undefined
 ***/
+
+
+/******___________________Let_________________________*/
+
+console.log(letVariable);
+
+let letVariable = 'demo data';
+/***
+ * here in above we get error because letVariable gets space in Global memory 
+ * but its yet UNINITIALIZED thus we get error as below
+ ____________ReferenceError: Cannot access 'letVariable' before initialization 
+ thus we can say that let const and var all are hoisted but the value of let and
+ const are UNINITIALIZED thus we get error
+ */
+
+console.log(gama)
+ /********
+  * Two type of error 
+  * 1. _______ReferenceError: Cannot access 'letVariable' before initialization 
+  * 2. _______ReferenceError: gama is not defined
+  * there is diffrence between i.e., first error states that we have a variable 
+  * but its value is not initalized
+  * second error says that the value itself is not present 
+  */
