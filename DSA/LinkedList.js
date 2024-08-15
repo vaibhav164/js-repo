@@ -6,3 +6,12 @@ class Node{
             this.next = next
     }
 }
+
+//Creating LinkedList in JS for first Time
+
+class LinkedList{
+
+    constructor(){
+        this.head = null
+    }
+}
