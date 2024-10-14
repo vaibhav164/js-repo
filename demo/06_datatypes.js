@@ -27,7 +27,8 @@ const largeNumber = 2344n // if we add suffix n just next to a number in JS it a
 
 // Reference type / Non Premitive type in JS
 // types of Non Primitive Data type:- Array, Objects, Functions
-//JS is Dynamically typed language when it comes to variable declarations
+//JS is Dynamically typed language when it comes to variable declarations (which means that we don't need to declare the type of variable before
+// declaring it)
 
 const fruits = ["mango", 'grapes', 'guvava', 'apple', 'orrange'];
 
