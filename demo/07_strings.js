@@ -33,6 +33,13 @@ console.log(demoString.indexOf("V"));
 
 //this will slice the string into specific index
 // slice can handle negative values as well when passed in parameters 
+/**
+if we add two value to slice method it will slice the string but will left the 2nd index 
+value on output e.g.,
+let name = "userName";
+console.log(name.slice(1,6))
+O/P---->>>> serNa
+**/
 console.log(demoString.slice(-8));
 
 //substring
