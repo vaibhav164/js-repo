@@ -20,3 +20,22 @@ adhaarCard.then((data)=>{
 }).catch((data)=>{
     console.log(data)
 })
+
+//Remember always that then() method always returns promise example i.e;
+
+const promiseDemo = new Promise((res, rej)=>{
+        return res('Success')
+    })
+
+promiseDemo.then(data=>{
+    console.log(data);
+    data += 'ful'
+    return data
+    /*we can notice that the above code is returning the updated data but we can see that we are able to attach a then to another then it 
+    means that 
+    return data *****also means as below line*****
+    return Promise.resolve(data)
+    */
+}).then(updatedData=>{
+    console.log(updatedData)
+})
