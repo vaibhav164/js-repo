@@ -39,3 +39,8 @@ promiseDemo.then(data=>{
 }).then(updatedData=>{
     console.log(updatedData)
 })
+/*** If promise resolve is not returning anything in that case it return undeifined 
+as we can see L39 .then method it is not returning anything in that case on the method returns
+Promise.resolve(undefined)
+
+**/
