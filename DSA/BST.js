@@ -1,5 +1,7 @@
 //Binary Search Tree
 
+//Checking the github account
+
 class Node {
     constructor(data, left = null, right = null){
         this.data = data
