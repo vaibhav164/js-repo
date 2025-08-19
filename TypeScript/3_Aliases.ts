@@ -18,3 +18,5 @@ userInfo({personName:"Vaibhav", age:45, contact:434534});
  Now in L15 you can see we can only pass the argument which is the type of paremeter of userInfo function in L9 as User
  if we pass anything more or less TS will give us error
  */
+
+ export {}

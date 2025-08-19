@@ -32,3 +32,5 @@ const handleError =(err:string):never=>{
      * it appears where there is nothing left in union 
      * **/
 }
+
+export {}
