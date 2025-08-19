@@ -8,4 +8,9 @@ function vaibhav():number{
 
     return five
 }
+
+const ansu =():number=>{
+    const six = 6
+    return six
+}
 //In Above fuction if we'll return anything except a number the TS will throw error
