@@ -21,4 +21,7 @@ taskList(value)
 /***
  * Here in above L15 you can see the the argumnet type in tasklist is not same as the parameter list passed in L19 but TS
  * still not giving error
+ 
+    To get solution of this check the aliace in TS file Aliases.ts file
+
  */
