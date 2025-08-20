@@ -14,3 +14,5 @@ data = [344343, true, 'dsscc','ddtdg'];
 data.push("Test")
 data.push(false)
 data.push(43433434)
+
+export {}

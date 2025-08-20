@@ -35,3 +35,5 @@ interface person {
 
 //above L32 will extend the value of person from L10 and add one more value to person but we can't achieve this same in type
 //it will give us error
+
+export {}
